@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "ransom-rs",
+    "rendezvous-rs",
+]
+resolver = "2"

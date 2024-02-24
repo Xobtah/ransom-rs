@@ -1,0 +1,20 @@
+[package]
+name = "ransom"
+version = "0.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.79"
+chacha20poly1305 = { version = "0.10", features = ["stream", "std"] }
+clap = { version = "4.4", features = ["derive"] }
+dialoguer = { version = "0.11", features = ["fuzzy-select"] }
+# dirs-next = "2.0"
+env_logger = "0.10"
+hex = "0.4"
+log = "0.4.20"
+rand = "0.8"
+rendezvous = { git = "https://github.com/Rusty-Rooster/rendezvous-rs.git" }
+tokio = { version = "1.35.1", features = ["rt", "rt-multi-thread", "macros"] }
+walkdir = "2.4.0"

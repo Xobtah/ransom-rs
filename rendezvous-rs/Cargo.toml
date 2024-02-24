@@ -1,0 +1,14 @@
+[package]
+name = "rendezvous"
+version = "0.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+frankenstein = { version = "0.30.1", features = ["async-http-client"] }
+log = "0.4.20"
+thiserror = "1.0.56"
+
+[dev-dependencies]
+tokio = { version = "1.35.1", features = ["rt", "macros"] }
